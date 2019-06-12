@@ -1,0 +1,39 @@
+{
+    "name": "K Snippets-SyntaxHighlighter",
+    "displayName": "K Framework Language Support",
+    "description": "K framework snippets and syntax highlighter",
+    "version": "1.0.0",
+    "icon" : "./logo.png",
+    "publisher": "Romaniuc Dragos",
+    "author": {
+	"name": "Dragos Romaniuc",
+	"email": "romaniuc_dragos@yahoo.com",
+	"url": "https://github.com/DragosRomaniuc"
+	},
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+	"Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "kframework",
+                "path": "./snippets/snippets.json"
+            }
+        ],
+	"languages": [{
+            "id": "kframework",
+            "aliases": ["K", "k"],
+            "extensions": [".k"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "kframework",
+            "scopeName": "text.k",
+            "path": "./syntaxes/k.tmLanguage"
+        }]
+    }
+}

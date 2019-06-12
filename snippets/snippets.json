@@ -1,0 +1,76 @@
+{
+    "K Model": {
+        "prefix": "kmdl",
+        "body": [
+            "module ${NAME}",
+            "",
+            "",
+            "endmodule"
+        ],
+        "description": "K-Framework module snippet"
+    },
+
+
+
+    "K Model-SYNTAX": {
+        "prefix": "kmdls",
+        "body": [
+            "module ${NAME}-SYNTAX",
+            "",
+            "",
+            "endmodule"
+        ],
+        "description": "K-Framework module snippet"
+    },
+
+
+
+    "K Start": {
+        "prefix": "kstart",
+        "body": [
+            "module ${NAME}-SYNTAX",
+            "",
+            "",
+            "endmodule",
+            "",
+            "module ${NAME}",
+            "imports ${NAME}-SYNTAX",
+            "",
+            "",
+            "endmodule"
+        ],
+        "description": "K-Framework start snippet"
+    },
+
+
+    "K Syntax": {
+        "prefix": "ksyntax",
+        "body": [
+            "syntax ${NAME} ::= ${}"    
+        ],
+        "description": "K-Framework syntax snippet"
+    },
+
+
+    "K Configuration": {
+        "prefix": "kcfg",
+        "body": [
+            "configuration <T>",
+            "${}",
+            "",
+            "</T>"
+        ],
+        "description": "K-Framework configuration snippet"
+    },
+	
+	"K Rule": {
+        "prefix": "krule",
+        "body": [
+            "rule <k> $1      </k>",
+            "<env> $2         </env>",
+            "<stack> $3       </stack>"
+        ],
+        "description": "K-Framework configuration snippet"
+    }
+}
+
